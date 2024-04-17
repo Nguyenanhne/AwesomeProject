@@ -15,7 +15,40 @@ function DetailsScreen() {
       <Image source = {logo} style = {styles.logo} height ={height*0.3} resizeMethod = "auto"/>
       <CustomInput placeholder= "Username" value={username} setValue = {setUsername} secureTextEntry={false}/>
       <CustomInput placeholder= "Password" value={password} setValue = {setPassword} secureTextEntry={true}/>
-      <CustomButton/>
+      <CustomButton text={"Login"} type = {"PRIMARY"} onPress={()=>console.warn("Login")}/>
+      <CustomButton 
+        text={"Forgot Password"} 
+        type = {"TERTIARY"} 
+        onPress={()=>console.warn("Forgot Password")}
+      />
+      <CustomButton 
+        text={"Login with Faceboook"}
+        bgColor={"#E7EAF4"} 
+        textColor={"#4765A9"} 
+        type = {"PRIMARY"} 
+        onPress={()=>console.warn("Login with Facebook")}
+      />
+      <CustomButton 
+        text={"Login with Google"} 
+        bgColor={"#FAE9EA"} 
+        textColor={"#DD4D44"} 
+        type = {"PRIMARY"}
+        marginTop={10}
+        onPress={()=>console.warn("Login with Google")}
+      />
+      <CustomButton 
+        text={"Login with TikTok"} 
+        bgColor={"#e3e3e3"} 
+        textColor={"#363636"} 
+        type = {"PRIMARY"}         
+        marginTop={10}
+        onPress={()=>console.warn("Login with Tiktok")}
+      /> 
+      <CustomButton 
+        text={"Don't have an account? Create one"} 
+        type = {"TERTIARY"} 
+        onPress={()=>console.warn("Create one")}
+      />
     </View>
   );
 }

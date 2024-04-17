@@ -19,6 +19,8 @@ function CustomInput({ value, setValue, placeholder, secureTextEntry }) {
 
 const styles = StyleSheet.create({
   container: {
+    justifyContent: "center",
+    height: "7%",
     backgroundColor: "white",
     width: "100%",
     borderColor: Colors.BLACK,
@@ -28,7 +30,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   input: {
-    // Add your input styles here if needed
+    fontSize: 15
   }
 });
 
