@@ -5,7 +5,7 @@ import Colors from '../Utils/Colors';
 import CustomInput from '../Custom/CustomInput';
 import CustomButton from '../Custom/CustomButton';
 
-function FormLogin() {
+function RegisterForm() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -45,7 +45,7 @@ function FormLogin() {
         onPress={()=>console.warn("Login with Tiktok")}
       /> 
       <CustomButton 
-        text={"Don't have an account? Create one"} 
+        text={"Already have an account? Log in now!"} 
         type = {"TERTIARY"} 
         onPress={()=>console.warn("Create one")}
       />
@@ -67,4 +67,4 @@ const styles = StyleSheet.create({
     borderRadius: 30
   }
 })
-export default FormLogin;
+export default RegisterForm;
